@@ -1,0 +1,31 @@
+#wrapper{
+    text-align: center;
+}
+
+header{
+    border-bottom: 1px solid;
+    padding-bottom: 10px;
+}
+
+a{
+    color: black;
+}
+
+nav{
+    border-bottom: 1px solid;
+    height:33px;
+}
+
+.textInBox{
+    font-size: 27px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.t{
+    border: 1px solid;
+}
+
+.row{
+    display: inline-flex;
+}
