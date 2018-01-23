@@ -5,27 +5,25 @@
 header{
     border-bottom: 1px solid;
     padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 a{
     color: black;
 }
 
-nav{
-    border-bottom: 1px solid;
-    height:33px;
+#main{
+    margin-top: 15px;
 }
 
 .textInBox{
-    font-size: 27px;
+    font-size: 25px;
     font-weight: bold;
-    margin-top: 10px;
+    margin-top: 15px;
 }
+
+
 
 .t{
     border: 1px solid;
-}
-
-.row{
-    display: inline-flex;
 }
