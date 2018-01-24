@@ -16,31 +16,21 @@
     <title>SelfCare</title>
 </head>
 <body id="wrapper">
-  <header id="head">
-    <nav class="navbar navbar-dark">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <a href="profile.html"><section class="logo"></section></a>
-        <i class="fa fa-universal-access fa-2x float-right" aria-hidden="true"></i> 
-          <div class="navbar-collapse collapse" id="navbar">
-            <a class="navbar-brand" href="profile.html"><img src="images/profilepic.jpg" width="100px">  David Polisanov</a>
-            <a class="profileSettings"href="profileSettings.html"><i class="fa fa-cog fa-spin fa-2x fa-fw" aria-hidden="true"></i></a>
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="medication.html">Medication</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Appointment</a>
-             </li>
-             <li class="nav-item" >
-                <a class="nav-link" href="#">Notification</a>
-             </li>
-            </ul>
-  </div>
-</nav>
-</header>
-    <h1 class="titleMedication">Medication</h1>
-<script src="includes/js/medication.js"></script>
-</body>
+  <header>
+      <a href="main.html"><img src="images/logo.png"></a>
+    </header>  
+    <main id=main class="container">
+        <div class="row">
+            <div class="col-12">
+                <p class="h1">Medications</p>
+            </div>
+        </div>
+        <div class="list-group textInBox mt-5">
+          <a href="acamol.html" class="list-group-item list-group-item-action list-group-item-primary">Acamol</a>
+          <a href="#" class="list-group-item list-group-item-action list-group-item-success">KalBeten</a>
+          <a href="#" class="list-group-item list-group-item-action list-group-item-danger">Dexamol</a>
+          <a href="#" class="list-group-item list-group-item-action list-group-item-warning">Voltaren</a>
+        </div>
+    </main>
+  <!--<script src="includes/js/medication.js"></script>-->
 </html>
