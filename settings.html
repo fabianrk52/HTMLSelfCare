@@ -19,35 +19,46 @@
 
 <body id="wrapper">
 <header>
-  <a href="#"><img src="images/logo.png"></a>
+  <a href="profile.html"><img src="images/logo.png"></a>
 </header>
 <main id=main class="container">
   <div class="row">
     <div class="col-6">
         <a href="#"> 
       <p class="textInBox">David</p>
-          <img src="images/profilepic.jpg" height="120px">
+          <img src="images/profilepic.jpg" height="150px">
         </a>
     </div>
     <div class="col-6">
-        <a href="medication.html"> 
-          <p class="textInBox">Medicine</p>
-          <i class="fa fa-medkit fa-5x fa-border" aria-hidden="true"></i>
-        </a>
+      <form>
+          <div class="form-group">
+            <label for="Name" class="textInBox">Name</label>
+            <input type="text" class="form-control mt-2" placeholder="David" readonly>
+            <label for="Surname" class="textInBox">Surname</label>
+            <input type="text" class="form-control mt-2" placeholder="Polisanov" readonly>
+          </div>
+        </form>     
     </div>
   </div>
-    <div class="row align-items-end">
+    <div class="form-row align-items-end mt-4">
         <div class="col-6">
-          <a href="settings.html">
-            <p class="textInBox">Settings</p>
-            <i class="fa fa-cog fa-5x fa-border "></i>
-          </a>
+            <div class="form-group">
+                <label for="email" class="textInBox">Email</label>
+                <input type="email" class="form-control" placeholder="name@example.com">
+            </div>  
         </div>
         <div class="col-6">
-            <a href="#"> 
-              <p class="textInBox">Appointments</p>
-              <i class="fa fa-user-md fa-5x fa-border" aria-hidden="true"></i>
-            </a>
+          <div class="form-group">
+              <label for="PhoneNumber" class="textInBox">Phone</label>
+              <input type="email" class="form-control" placeholder="050-12345678">
+          </div>  
+        </div>
+    </div>
+        <div class="form-row align-items-end mt-5">
+        <div class="col-12">
+              <button type="submit" class="btn btn-success">Update</button>
+        </div>
+              
         </div>
       </div>
 </main>
