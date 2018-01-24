@@ -13,27 +13,15 @@ a{
 }
 
 #main{
-    margin-top: 40px;
+    margin-top: 10px;
 }
 
-.textInBox{
-    font-size: 25px;
+.bold{
     font-weight: bold;
-<<<<<<< HEAD
-=======
-    margin-top: 15px;
->>>>>>> final
-}
-
-.medBlue{
-    display: block;
-    background: #b8daff;
-    height: 45px;
 }
 
 .red{
     color: red;
-<<<<<<< HEAD
 }
 
 .smaltext{
@@ -44,23 +32,3 @@ a{
 #map{
     height: 300px;
 }
-=======
-}
-
-.smaltext{
-    font-size: 15px;
-    text-align: justify;
-}
-/*
-.align-items-end{
-    margin-top: 40px;
-}
-
-.form-group{
-    margin-bottom: 0px;
-}
-.form-control{
-    margin-top: 10px;
-}
-*/
->>>>>>> final
