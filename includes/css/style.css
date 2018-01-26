@@ -1,34 +1,84 @@
 #wrapper{
     text-align: center;
+
 }
 
 header{
     border-bottom: 1px solid;
-    padding-bottom: 10px;
     padding-top: 10px;
 }
 
-a{
+a, a::selection, a:hover{
     color: black;
+    text-decoration: none;
 }
 
 #main{
     margin-top: 10px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .bold{
     font-weight: bold;
 }
 
+.logo{
+    display: inline-block;
+    background-image: url("../images/logo.png");
+    background-repeat: no-repeat;
+}
+
+.hrwatch{
+    display: inline-block;
+    background-image: url("../images/hrwatch.png");
+    background-repeat: no-repeat;
+}
+
+.profile{
+    display: inline-block;
+    background-image: url("../images/profilepic.png");
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100px;
+}
+.fingerprint{
+    display: inline-block;
+    background-image: url("../images/fingerprint.png");
+    height:100px;
+    width: 100px;
+    background-repeat: no-repeat;
+}
+.doctor{
+    display: inline-block;
+    background-image: url("../images/doctor.png");
+    height: 120px;
+    width: 120px;
+    background-repeat: no-repeat;
+}
+.small{
+    height: 110px;
+    width: 110px;
+}
+.medium{
+    height: 120px;
+    width: 120px;
+}
+
+.big{
+    height: 150px;
+    width: 150px;
+}
+
 .red{
     color: red;
 }
 
-.smaltext{
-    font-size: 13px;
-    text-align: justify-content:;
+.button{
+    border: 2px solid rgba(128, 128, 128, 0.322);
+    border-radius: 8%;
+    font-size: 22px;
 }
 
-#map{
-    height: 300px;
+.smaltext{
+    font-size: 13px;
 }
