@@ -1,6 +1,7 @@
 {
-	"User": [{
+    "User":[{    
 		"name": "David",
-		"image": "../images/profilepic.png"
+		"image": "../images/hrwatch.png"
 	}]
 }
+
