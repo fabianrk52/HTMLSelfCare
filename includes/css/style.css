@@ -18,6 +18,7 @@ a, a::selection, a:hover{
     font-family: 'Roboto', sans-serif;
 }
 
+
 .bold{
     font-weight: bold;
 }
@@ -33,14 +34,6 @@ a, a::selection, a:hover{
     background-image: url("../images/hrwatch.png");
     background-repeat: no-repeat;
 }
-
-.profile{
-    display: inline-block;
-    background-image: url("../images/profilepic.png");
-    background-repeat: no-repeat;
-    height: 100px;
-    width: 100px;
-}
 .fingerprint{
     display: inline-block;
     background-image: url("../images/fingerprint.png");
@@ -48,6 +41,19 @@ a, a::selection, a:hover{
     width: 100px;
     background-repeat: no-repeat;
 }
+
+#profilepic{
+    border-radius: 8%;
+}
+
+.profile{
+    display: inline-block;
+    background-image: url("../images/profilepic.png");
+    height: 120px;
+    width: 120px;
+    background-repeat: no-repeat;
+}
+
 .doctor{
     display: inline-block;
     background-image: url("../images/doctor.png");
@@ -74,11 +80,19 @@ a, a::selection, a:hover{
 }
 
 .button{
-    border: 2px solid rgba(128, 128, 128, 0.322);
+    border: 1px solid rgba(128, 128, 128, 0.226);
     border-radius: 8%;
     font-size: 22px;
 }
 
 .smaltext{
     font-size: 13px;
+}
+
+.back{
+    position: absolute;
+    background-image: url("../images/back.png");
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 40px;
 }
