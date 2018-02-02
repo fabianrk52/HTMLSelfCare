@@ -33,14 +33,6 @@ a, a::selection, a:hover{
     background-image: url("../images/hrwatch.png");
     background-repeat: no-repeat;
 }
-
-.profile{
-    display: inline-block;
-    background-image: url("../images/profilepic.png");
-    background-repeat: no-repeat;
-    height: 100px;
-    width: 100px;
-}
 .fingerprint{
     display: inline-block;
     background-image: url("../images/fingerprint.png");
