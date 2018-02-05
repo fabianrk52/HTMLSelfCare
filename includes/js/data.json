@@ -1,36 +1,28 @@
 {
-    "User":[
-			{    
+	"User": [{
+		"Title": {
 			"name": "David",
 			"image": "includes/images/profilepic.png"
-		}],
-		"Medication":[
-			{
-				"name":"Medicine",
-				"class":"fa fa-medkit fa-5x"
-		}],
-		"Watch":[
-			{
-				"name":"HR Watch",
-				"image":"includes/images/hrwatch.png"
-		}],
-		"Appointments":[
-			{
-				"name":"Appointments",
-				"class":"fa fa-user-md fa-5x"
-			}
-		],
-		"Messages":[
-			{
-				"name":"Messages",
-				"class":"fa fa-envelope fa-5x"
-			}
-		],
-		"Test":[
-			{
-				"name":"Test Result",
-				"class":"fa fa-flask fa-5x"
-			}
-		]
+		},
+		"Medication": {
+			"name": "Medicine",
+			"class": "fa fa-medkit fa-5x"
+		},
+		"Watch": {
+			"name": "HR Watch",
+			"image": "includes/images/hrwatch.png"
+		},
+		"Appointments": {
+			"name": "Appointments",
+			"class": "fa fa-user-md fa-5x"
+		},
+		"Messages": {
+			"name": "Messages",
+			"class": "fa fa-envelope fa-5x"
+		},
+		"Test": {
+			"name": "Test Result",
+			"class": "fa fa-flask fa-5x"
+		}
+	}]
 }
-
