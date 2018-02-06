@@ -6,3 +6,7 @@ define('DBNAME', 'auxstudB7c');
 
 
 $connection=mysqli_connect(DBHOST,DBUSER,DBPASS,DBNAME);
+
+if(mysqli_connect_errno()){
+    die("DB Connection failed: ".mysqli_connect_errno()."(");
+}

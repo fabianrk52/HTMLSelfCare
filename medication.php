@@ -1,3 +1,9 @@
+<?php
+    include 'db.php';
+    include 'config.php';
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -22,7 +28,7 @@
     <main id=main class="container">
         <div class="row">
             <div class="col-12">
-                <h1>Medicine<h1>
+                <p class="h1">Medicine</p>
             </div>
         </div>
         <div class="list-group bold h5 mt-5">
@@ -33,8 +39,10 @@
         </div>
         <div class="row">
           <div class="col-12">
-            <a href="main.html"><div class="back mt-3"></div></a>
-            <a href="add.html"><i class="fa fa-plus fa-2x mt-3 fa-border" aria-hidden="true"></i></a>
+              <a href="main.html">
+                  <div class="back mt-3"></div>
+              </a>
+            <i class="fa fa-plus fa-2x mt-3 fa-border" aria-hidden="true"></i>
           </div>
         </div>
     </main>
