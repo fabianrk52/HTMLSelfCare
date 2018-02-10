@@ -3,17 +3,6 @@
 include 'server/data/db.php';
 include 'server/data/config.php';
 
-$name = mysqli_real_escape_string($connection, $_POST['name']);
-$dosage = mysqli_real_escape_string($connection, $_POST['dosage']);
-$instruction = mysqli_real_escape_string($connection, $_POST['instruction']);
-
-$query = "INSERT INTO 247_medication (Name, Dosage, Instruction) VALUES ('$name', '$dosage', '$instruction')";
-
-if(mysqli_query($link, $sql)){
-    echo "Records added successfully.";
-} else{
-    echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
-}
 
 ?>
 
@@ -48,7 +37,7 @@ if(mysqli_query($link, $sql)){
         </div>    
     </div>
     <div>
-        <form action="#" method="post">
+        <form method="post">
             <div class="row mt-2">
                 <div class="col-12">
                     <label for="name">Name: <br> <input type="text" name="name" value="" placeholder="Acamol" class="form-control"></label>
@@ -66,9 +55,8 @@ if(mysqli_query($link, $sql)){
             </div>            
             <div class="row mt-5">
                 <div class="col-12">
-                    <a href="medication.html"><div class="back"></div></a>
-                    <input type="submit" value="Save" class="btn btn-success">
-
+                    <a href="medication.php"><div class="back"></div></a>
+                    <input type="submit" name="save" value="Save" class="btn btn-success">
                 </div>
             </div>
         </form>
@@ -77,3 +65,14 @@ if(mysqli_query($link, $sql)){
 
 </body>
 </html>
+
+<?php
+    if(!empty($_POST)){
+    $name = mysqli_real_escape_string($connection, $_POST['name']);
+    $dosage = mysqli_real_escape_string($connection, $_POST['dosage']);
+    $instruction = mysqli_real_escape_string($connection, $_POST['instruction']);
+
+    $query = "INSERT INTO 247_medication (Name, Dosage, Instruction) VALUES ('$name', '$dosage', '$instruction')";
+    mysqli_query($connection, $query);
+    }
+    ?>
