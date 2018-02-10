@@ -1,7 +1,13 @@
 <?php
-    include 'db.php';
-    include 'config.php';
+    include 'server/data/db.php';
+    include 'server/data/config.php';
 
+    $query="SELECT * FROM 247_medication";
+    $result = mysqli_query($connection, $query);
+    $medication = array();
+    while($row = mysqli_fetch_array($result)) {
+        $medication[] = $row['Name'];   
+    }   
 ?>
 
 <!DOCTYPE html>
@@ -32,19 +38,19 @@
             </div>
         </div>
         <div class="list-group bold h5 mt-5">
-          <a href="acamol.html" class="list-group-item list-group-item-action list-group-item-primary">Acamol</a>
-          <a href="#" class="list-group-item list-group-item-action list-group-item-success">KalBeten</a>
-          <a href="#" class="list-group-item list-group-item-action list-group-item-danger">Dexamol</a>
-          <a href="#" class="list-group-item list-group-item-action list-group-item-warning">Voltaren</a>
+        <?php
+            foreach($medication as $key){
+            echo '<a href="acamol.html" class="list-group-item list-group-item-action">'. $key.'</a>';
+            }   
+            ?>
         </div>
         <div class="row">
           <div class="col-12">
-              <a href="main.html">
+                <a href="main.html">
                   <div class="back mt-3"></div>
-              </a>
-            <i class="fa fa-plus fa-2x mt-3 fa-border" aria-hidden="true"></i>
+                </a>            
+            <a href="add.php"><i class="fa fa-plus fa-2x mt-3 fa-border" aria-hidden="true"></i></a>
           </div>
         </div>
     </main>
-  <!--<script src="includes/js/medication.js"></script>-->
 </html>

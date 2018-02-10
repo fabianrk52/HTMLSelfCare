@@ -1,3 +1,8 @@
+*{
+    margin: 0px auto;
+    padding: 0px;
+}
+
 #wrapper{
     text-align: center;
 
@@ -13,8 +18,14 @@ a, a::selection, a:hover{
     text-decoration: none;
 }
 
+footer{
+    height: 20%;
+    display: block;
+    border-top: 1px solid rgba(128, 128, 128, 0.226);
+}
+
+
 #main{
-    margin-top: 10px;
     font-family: 'Roboto', sans-serif;
 }
 

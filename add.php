@@ -1,3 +1,22 @@
+<?php
+
+include 'server/data/db.php';
+include 'server/data/config.php';
+
+$name = $_POST['name'];
+$dosage =$_POST['dosage'];
+$instruction = $_POST['instruction'];
+
+$query = "INSERT INTO 247_medication (Name, Dosage, Instruction) VALUES ('$name', '$dosage', '$instruction')";
+
+if(mysqli_query($connection, $query)){
+    echo "Records added successfully.";
+} else{
+    echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,20 +48,25 @@
         </div>    
     </div>
     <div>
-        <form action="#" method="post" enctype="text/plain" class="formAdd">
-            <div class="row mt-5">
+        <form action="#" method="post">
+            <div class="row mt-2">
                 <div class="col-12">
-                    <label>Name: <br> <input type="text" name="name" value="" placeholder="Acamol" class="form-control"></label>
+                    <label for="name">Name: <br> <input type="text" name="name" value="" placeholder="Acamol" class="form-control"></label>
                 </div>
             </div>
-            <div class="row mt-5">
+            <div class="row mt-2">
                 <div class="col-12">
-                    <label>Color: <br><input type="color" name="color"></label><br>
+                    <label for="dosage">Dosage: <br> <input type="number" name="dosage" value="" placeholder="500mg" class="form-control"></label>
                 </div>
-            </div>
+            </div>  
+            <div class="row mt-2">
+                <div class="col-12">
+                    <label for="instruction">Instruction: <br> <input type="text" name="instruction" value="" class="form-control"></label>
+                </div>
+            </div>            
             <div class="row mt-5">
                 <div class="col-12">
-                    <a href="medication.html"><div class="back"></div></a>
+                    <a href="medication.php"><div class="back"></div></a>
                     <input type="submit" value="Save" class="btn btn-success">
                 </div>
             </div>
