@@ -1,3 +1,15 @@
+<?php
+    include 'server/data/db.php';
+    include 'server/data/config.php';
+
+    $query="SELECT * FROM 247_appointments";
+    $result = mysqli_query($connection, $query);
+    $doctor = array();
+    while($row = mysqli_fetch_array($result)) {
+        $doctor[]= $row['last'];   
+    }   
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,10 +40,11 @@
                 </div>
             </div>
         <div class="list-group textInBox mt-5">
-            <a href="doc1.html" class="list-group-item list-group-item-action">Dr. Rozen</a>
-            <a href="#" class="list-group-item list-group-item-action">Dr. Peretz</a>
-            <a href="#" class="list-group-item list-group-item-action">Dr. Shmuli</a>
-            <a href="#" class="list-group-item list-group-item-action">Dr. Cohen</a>
+            <?php
+            foreach($doctor as $key){
+            echo '<a href="doc1.html" class="list-group-item list-group-item-action"> Dr. '. $key.'</a>';
+            }   
+            ?>
         </div>
         <div class="row">
                 <div class="col-12">

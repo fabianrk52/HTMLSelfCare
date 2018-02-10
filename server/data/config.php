@@ -1,4 +1,4 @@
 <?php
-define('URL', 'http://localhost/~Fabian/SelfCare/');
+define("URL", "http://localhost/~Fabian/SelfCare/");
 
 ?>
